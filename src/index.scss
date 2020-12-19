@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  letter-spacing: 0.4px;
+  color: #555;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #232323;
+}
+
+h2, h3, h1, p {
+  margin: 0;
+}
+
+.ui-flex {
+  display: flex;
+}
+
+.ui-layout {
+  display: flex;
+}
+
+.ui-sidebar {
+  width: 160px;
+  background: #2C2C2C;
+  height: 0;
+  position: fixed;
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+.ui-sidebar-animate {
+  height: 100vh;
+  transition: height 2s ease;
+}
+
+.ui-sidebar-animate .ui-logo-box {
+  opacity: 1;
+  transition: opacity 2.2s ease-in;
+}
+
+.ui-sidebar-animate .ui-vertical-menu a {
+  opacity: 1;
+  transition: opacity 2.2s ease-in;
+}
+
+.ui-logo-box {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ui-logo-small {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 6px #1d1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-vertical-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px 10px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  opacity: 0;
+}
+
+.ui-vertical-menu img {
+  margin-right: 20px;
+  width: 22px;
+}
+
+.ui-settings-box {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.ui-settings-box img {
+  width: 35px;
+  height: 35px;
+}
+
+.ui-center-content {
+  background: #212121;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 150px);
+  margin-left: 160px;
+  margin-top: 140px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.ui-projects-label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 52px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ui-vertical-menu a:hover {
+  font-weight: bold;
+  transition: border 0.4s ease-out;
+}
+
+.ui-sidebar-gray-label {
+  color: #aaa;
+  font-weight: 600;
+  font-size: 11px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.active {
+  font-weight: bold;
+  border-right: 3px solid #F6E71D;
+  /* background: #212121; */
+}
+
+/**/
+
+.ui-topbar {
+   /* width: calc(100% - 160px); */
+      position: absolute;
+      background: #2c2c2c;
+      margin-left: 160px;
+      height: 140px;
+  /* border-bottom: 1px solid black; */
+  width: 0;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 20px 12px -16px #1d1c1c;
+}
+
+
+.ui-topbar-animate {
+  width: 100%;
+  transition: width 2.2s linear;
+}
+
+.ui-icon-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui-small-icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  height: 400px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 5px;
+  background: #2C2C2C;
+  color: white;
+  padding: 20px;
+}
+
+.small-icon-box-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-icon-box-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.small-icon-box-label {
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.small-icon-box-lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-icon-box-text {
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+
+.icon-box-button {
+  background: #212121;
+  color: white;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 12px 40px 12px 40px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.gradient-ball {
+  background: radial-gradient(96% 96% at 70.4% 31.2%, #000000 0%, rgba(0, 2, 16, 0) 100%), #F6E71D;
+  box-shadow: 0px 0px 20px rgba(255, 147, 147, 0.13), 40px 40px 80px #000000, 0px 4px 80px #F6E71D, inset 0px 2px 10px rgba(255, 255, 255, 0.58), inset 10px 20px 100px black;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50%;
+}
