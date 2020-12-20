@@ -13,19 +13,20 @@ import HomeIcon from './assets/images/home@3x.png';
 import Octo from './assets/images/octopuslogo.png';
 import Calculator from './containers/Calculator';
 import TopBar from "./components/TopBar";
+import SettingsIcon from './assets/images/settings@3x.png';
 
 export default function App() {
-  const [damjan, setDamjan] = useState(false);
+  const [appear, setAppear] = useState(false);
 
   useEffect(() => {
-    setDamjan(true);
+    setAppear(true);
   }, []);
 
   return (
     <Router>
       <div className="ui-layout">
         <TopBar />
-        <div className={`ui-sidebar ${damjan ? 'ui-sidebar-animate' : ''}`}>
+        <div className={`ui-sidebar ${appear ? 'ui-sidebar-animate' : ''}`}>
           <div className="ui-logo-box">
             <img className="ui-logo-small" alt="Small logo" src={Octo} />
           </div>
@@ -48,7 +49,7 @@ export default function App() {
               <p>BinToDec</p>
             </NavLink>
             <div className="ui-settings-box">
-              <img src={require('./assets/images/settings@3x.png')} alt="Home" />
+              <img src={SettingsIcon} alt="Settings" />
             </div>
           </div>
         </div>
