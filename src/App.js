@@ -12,25 +12,19 @@ import CalculatorIcon from './assets/images/calculator@3x.png';
 import HomeIcon from './assets/images/home@3x.png';
 import Octo from './assets/images/octopuslogo.png';
 import Calculator from './containers/Calculator';
-import ThemeSwitch from './components/ThemeSwitch';
+import TopBar from "./components/TopBar";
 
 export default function App() {
   const [damjan, setDamjan] = useState(false);
-  const [burgija, setBurgija] = useState(false);
 
   useEffect(() => {
     setDamjan(true);
-    setTimeout(function () {
-      setBurgija(true);
-    }, 2500);
   }, []);
 
   return (
     <Router>
       <div className="ui-layout">
-        <div className={`ui-topbar ${burgija ? 'ui-topbar-animate' : ''}`}>
-          <ThemeSwitch />
-        </div>
+        <TopBar />
         <div className={`ui-sidebar ${damjan ? 'ui-sidebar-animate' : ''}`}>
           <div className="ui-logo-box">
             <img className="ui-logo-small" alt="Small logo" src={Octo} />

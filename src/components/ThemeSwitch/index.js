@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style.css';
+import './style.scss';
 
 const ThemeSwitch = () => {
   const [appear, setAppear] = useState(false);
@@ -7,10 +7,18 @@ const ThemeSwitch = () => {
     setAppear(true);
   }, [])
   return (
-    <label className={`form-switch ${appear ? 'animate' : ''}`}>
-      <input type="checkbox" />
-      <i></i>
-    </label>
+    <div className="ui-theme-switch">
+      <div className="sun-icon-wrapper">
+        <img className="sun-icon" alt="Light" />
+      </div>
+      <label className={`form-switch ${appear ? 'animate' : ''}`}>
+        <input type="checkbox" />
+        <i></i>
+      </label>
+      <div className="moon-icon-wrapper">
+        <img className="moon-icon" alt="Dark" />
+      </div>
+    </div>
   )
 }
 
