@@ -1,0 +1,26 @@
+.ui-topbar {
+  position: absolute;
+  background: #2c2c2c;
+  margin-left: 160px;
+  height: 140px;
+  width: 0;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 20px 12px -16px #1d1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ui-topbar-animate {
+  width: calc(100% - 160px);
+  transition: width 2.2s linear;
+}
+
+.ui-user-greeting {
+  margin-left: 20px;
+  color: #dadada;
+  font-size: 36px;
+  font-weight: bold;
+}

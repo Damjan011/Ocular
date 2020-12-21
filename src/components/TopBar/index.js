@@ -11,6 +11,9 @@ const TopBar = () => {
   }, []);
   return (
     <div className={`ui-topbar ${appear ? 'ui-topbar-animate' : ''}`}>
+      <div className="ui-user-greeting">
+        <p>Hello, Damjan</p>
+      </div>
       <ThemeSwitch />
     </div>
   )

@@ -3,17 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink,
+  Link
 } from "react-router-dom";
 import Home from './containers/Home';
 import Data from './containers/Data';
 import Logo from './assets/images/server@3x.png';
 import CalculatorIcon from './assets/images/calculator@3x.png';
 import HomeIcon from './assets/images/home@3x.png';
-import Octo from './assets/images/octopuslogo.png';
+import Octo from './assets/images/user@3x.png';
 import Calculator from './containers/Calculator';
 import TopBar from "./components/TopBar";
 import SettingsIcon from './assets/images/settings@3x.png';
+import JavascriptIcon from './assets/images/javascript.png';
+import ReactIcon from './assets/images/react-icon.jpg';
 
 export default function App() {
   const [appear, setAppear] = useState(false);
@@ -28,11 +31,13 @@ export default function App() {
         <TopBar />
         <div className={`ui-sidebar ${appear ? 'ui-sidebar-animate' : ''}`}>
           <div className="ui-logo-box">
-            <img className="ui-logo-small" alt="Small logo" src={Octo} />
+            <div className="ui-logo-small">
+            <img className="ui-logo-small-image" alt="Small logo" src={Octo} />
+            </div>
           </div>
           <div className="ui-vertical-menu">
             <div className="ui-sidebar-gray-label">
-              <p>MAIN MENU</p>
+              <p>MAIN</p>
             </div>
             <NavLink activeClassName="active" exact to="/">
               <div className="ui-menu-icon">
@@ -48,12 +53,25 @@ export default function App() {
               <img src={CalculatorIcon} alt="Home" />
               <p>BinToDec</p>
             </NavLink>
+
+
+            <div style={{marginTop: '30px'}} className="ui-sidebar-gray-label">
+              <p>TECHNOLOGIES</p>
+            </div>
+            <Link activeClassName="active">
+              <img src={JavascriptIcon} alt="Home" />
+              <p>JavaScript</p>
+            </Link>
+
+            <Link activeClassName="active">
+              <img src={ReactIcon} alt="Home" />
+              <p>React</p>
+            </Link>
             <div className="ui-settings-box">
               <img src={SettingsIcon} alt="Settings" />
             </div>
           </div>
         </div>
-
         <Switch>
           <Route path="/data">
             <Data />

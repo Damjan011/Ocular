@@ -1,3 +1,15 @@
+.ui-theme-switch {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.sun-icon, .moon-icon{
+ width: 30px;
+}
+
 .form-switch {
   display: inline-block;
   cursor: pointer;

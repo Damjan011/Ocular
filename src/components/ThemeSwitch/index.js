@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './style.scss';
 import MoonIcon from '../../assets/images/moon@2x.png';
-import SunIcon from '../../assets/images/brightness-low@2x.png';
+import SunIcon from '../../assets/images/brightness-high@2x.png';
 
 const ThemeSwitch = () => {
   const [appear, setAppear] = useState(false);
