@@ -9,7 +9,7 @@ const Data = () => {
       <BandwidthGraph />
       <div style={{width: '250px'}} className="ui-box">
         <div className="main-label">
-        <p>eeej</p>
+        <p>changed</p>
         </div>
 
         <div className="sub-label">
