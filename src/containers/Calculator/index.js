@@ -1,18 +1,18 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 
 const Calculator = () => {
   const jasamfunkcija = (prim) => {
-    return prim/2;
+    return prim / 2;
   }
-  const damjan = useRef(null);
+  const refInput = useRef(null);
 
   const onButtonClick = () => {
-    var b = damjan.current.value;
+    var b = refInput.current.value;
     console.log(b);
   }
   return (
-    <div className="ui-center-content" style={{width: '300px'}}>
-      <input ref={damjan} type="number"></input>
+    <div className="ui-center-content" style={{ width: '300px' }}>
+      <input ref={refInput} type="number"></input>
       <button onClick={onButtonClick}>ejjjjj</button>
     </div>
   )

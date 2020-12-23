@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './containers/Home';
 import DatabaseOperations from './containers/DatabaseOperations';
-import Logo from './assets/images/server@3x.png';
+import ServerIcon from './assets/images/server@3x.png';
 import CalculatorIcon from './assets/images/calculator@3x.png';
 import HomeIcon from './assets/images/home@3x.png';
 import Octo from './assets/images/user@3x.png';
@@ -32,7 +32,7 @@ export default function App() {
         <div className={`ui-sidebar ${appear ? 'ui-sidebar-animate' : ''}`}>
           <div className="ui-logo-box">
             <div className="ui-logo-small">
-            <img className="ui-logo-small-image" alt="Small logo" src={Octo} />
+              <img className="ui-logo-small-image" alt="Small logo" src={Octo} />
             </div>
           </div>
           <div className="ui-vertical-menu">
@@ -46,29 +46,26 @@ export default function App() {
               </div>
               <p>Home</p>
             </NavLink>
-            
+
             <NavLink activeClassName="active" exact to="/databaseOperations">
-              <img src={HomeIcon} alt="Home" />
+              <img src={ServerIcon} alt="Database operations" />
               <p>CRUD</p>
             </NavLink>
 
-            
-
-
             <NavLink activeClassName="active" exact to="/calculator">
-              <img src={CalculatorIcon} alt="Home" />
+              <img src={CalculatorIcon} alt="Calculator" />
               <p>BinToDec</p>
             </NavLink>
-            <div style={{marginTop: '30px'}} className="ui-sidebar-gray-label">
+            <div style={{ marginTop: '30px' }} className="ui-sidebar-gray-label">
               <p>TECHNOLOGIES</p>
             </div>
             <Link activeClassName="active">
-              <img src={JavascriptIcon} alt="Home" />
+              <img src={JavascriptIcon} alt="Javascript" />
               <p>JavaScript</p>
             </Link>
 
             <Link activeClassName="active">
-              <img src={ReactIcon} alt="Home" />
+              <img src={ReactIcon} alt="React" />
               <p>React</p>
             </Link>
             <div className="ui-settings-box">
