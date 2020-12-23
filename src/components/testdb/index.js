@@ -19,7 +19,6 @@ export default class Testdb extends Component {
 
   getResponse() {
     console.log(this.state.notesCollection)
-    // return this.state.notesCollection;
   }
 
   render() {

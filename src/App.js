@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './containers/Home';
-import Data from './containers/Data';
+import DatabaseOperations from './containers/DatabaseOperations';
 import Logo from './assets/images/server@3x.png';
 import CalculatorIcon from './assets/images/calculator@3x.png';
 import HomeIcon from './assets/images/home@3x.png';
@@ -39,22 +39,26 @@ export default function App() {
             <div className="ui-sidebar-gray-label">
               <p>MAIN</p>
             </div>
+
             <NavLink activeClassName="active" exact to="/">
               <div className="ui-menu-icon">
-                <img src={Logo} alt="Home" />
+                <img src={HomeIcon} alt="Home" />
               </div>
+              <p>Home</p>
+            </NavLink>
+            
+            <NavLink activeClassName="active" exact to="/databaseOperations">
+              <img src={HomeIcon} alt="Home" />
               <p>CRUD</p>
             </NavLink>
-            <NavLink activeClassName="active" exact to="/data">
-              <img src={HomeIcon} alt="Home" />
-              <p>Data</p>
-            </NavLink>
+
+            
+
+
             <NavLink activeClassName="active" exact to="/calculator">
               <img src={CalculatorIcon} alt="Home" />
               <p>BinToDec</p>
             </NavLink>
-
-
             <div style={{marginTop: '30px'}} className="ui-sidebar-gray-label">
               <p>TECHNOLOGIES</p>
             </div>
@@ -73,8 +77,8 @@ export default function App() {
           </div>
         </div>
         <Switch>
-          <Route path="/data">
-            <Data />
+          <Route path="/databaseOperations">
+            <DatabaseOperations />
           </Route>
           <Route path="/calculator">
             <Calculator />
@@ -87,4 +91,3 @@ export default function App() {
     </Router>
   );
 }
-

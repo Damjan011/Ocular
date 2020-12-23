@@ -11,7 +11,7 @@ const Calculator = () => {
     console.log(b);
   }
   return (
-    <div className="ui-center-content">
+    <div className="ui-center-content" style={{width: '300px'}}>
       <input ref={damjan} type="number"></input>
       <button onClick={onButtonClick}>ejjjjj</button>
     </div>
