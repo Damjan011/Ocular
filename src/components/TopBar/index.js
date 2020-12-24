@@ -18,7 +18,7 @@ const TopBar = () => {
       <div className={`ui-user-greeting ${longerAppear ? 'ui-user-greeting-appear' : ''}`}>
         <p>Hello, Username</p>
       </div>
-      <ThemeSwitch longerAppear={longerAppear}/>
+      <ThemeSwitch />
     </div>
   )
 }
