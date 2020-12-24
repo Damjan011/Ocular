@@ -13,9 +13,9 @@
   justify-content: space-between;
 }
 
-.ui-topbar-animate {
+.ui-topbar-appear {
   width: calc(100% - 160px);
-  transition: width 2.2s linear;
+  transition: width 1.7s linear;
 }
 
 .ui-user-greeting {
@@ -23,4 +23,10 @@
   color: #dadada;
   font-size: 36px;
   font-weight: bold;
+  opacity: 0;
+}
+
+.ui-user-greeting-appear {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
 }

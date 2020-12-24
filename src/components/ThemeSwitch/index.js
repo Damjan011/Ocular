@@ -6,10 +6,12 @@ import SunIcon from '../../assets/images/brightness-high@2x.png';
 const ThemeSwitch = () => {
   const [appear, setAppear] = useState(false);
   useEffect(() => {
-    setAppear(true);
+    setTimeout(() => {
+      setAppear(true)
+    }, 3000)
   }, [])
   return (
-    <div className="ui-theme-switch">
+    <div className={`ui-theme-switch ${appear ? 'ui-theme-switch-appear' : ''}`}>
       <div className="sun-icon-wrapper">
         <img src={SunIcon} className="sun-icon" alt="Light" />
       </div>

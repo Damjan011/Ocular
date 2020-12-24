@@ -4,6 +4,12 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 30px;
+  opacity: 0;
+}
+
+.ui-theme-switch-appear {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
 }
 
 .sun-icon, .moon-icon{
@@ -14,12 +20,6 @@
   display: inline-block;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  opacity: 0;
-}
-
-.animate {
-  opacity: 1;
-  transition: opacity 3s ease;
 }
 
 .form-switch i {
