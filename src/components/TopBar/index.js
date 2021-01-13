@@ -10,7 +10,6 @@ const TopBar = () => {
   // .then(response => response.json())
   // .then(data => console.log(data))
 
-
   // ispod je random user, odlican za paginaciju i dodatni load na scroll, i za neki dobar ui
   fetch('https://randomuser.me/api/')
   .then(res => res.json())
@@ -32,7 +31,7 @@ const TopBar = () => {
   return (
     <div className={`ui-topbar ${appear ? 'ui-topbar-appear' : ''}`}>
       <div className={`ui-user-greeting ${longerAppear ? 'ui-user-greeting-appear' : ''}`}>
-        <p>Hello, [placeholder]</p>
+        <p>Hello, [user]</p>
       </div>
       <ThemeSwitch />
     </div>
