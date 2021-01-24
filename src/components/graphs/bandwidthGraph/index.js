@@ -134,7 +134,7 @@ const hourFormatter = (tickTimestamp) => {
 
 const BandwidthGraph = () => {
   return (
-    <div id="bandwidth-usage" className="ui-box" style={{ padding: '20px', overflow: 'visible' }}>
+    <div id="bandwidth-usage" className="ui-box glass-card" style={{ padding: '20px', overflow: 'visible' }}>
       <div className="ui-graph-labels">
         <div className="ui-graph-labels-inner">
           <div style={{color: '#dadada'}} className="ui-graph-main-label">
